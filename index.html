@@ -8,8 +8,8 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUI cdn -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,49 +22,48 @@
 </head>
 
 <body class="font-sora">
-    <!-- header -->
-    <header class="bg-[#FFFBF0]">
-        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="sm:hidden md:block lg:block">
-                <img src="c2-assets/logo-header.png" alt="">
+                <!-- navbar -->
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="invisible md:visible md:block lg:block">
+            <img src="c2-assets/logo-header.png" alt="">
+        </div>
+
+        <img src="c2-assets/logo-footer.png" alt="" class="md:invisible">
+
+        <div>
+            <ul class="invisible md:visible flex gap-8">
+                <li><a href="" class="">Product</a></li>
+                <li><a href="" class="">Services</a></li>
+                <li><a href="" class="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-end gap-6">
+
+            <div class="invisible md:visible flex justify-center gap-6">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                
             </div>
-
-            <img src="c2-assets/logo-footer.png" alt="" class="md:hidden">
-
-            <div class="justify-center">
-                <ul class="flex gap-8">
-                    <li><a href="" class="">Product</a></li>
-                    <li><a href="" class="">Services</a></li>
-                    <li><a href="" class="">Contact Us</a></li>
-                </ul>
+            <div class="md:invisible justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
             </div>
-
-            <div class="flex items-end gap-6">
-
-                <div class="flex justify-center gap-6">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </div>
-                <div class="block md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-
-                </div>
-
-                <div class="flex items-center gap-6">
+            
+                <div class="invisible md:visible flex items-center gap-6">
                     <button class="border-2 border-green-600 px-6 py-2 rounded-md hover:bg-orange-600 hover:text-white">
                         Login
                     </button>
@@ -72,34 +71,38 @@
                         Register
                     </button>
                 </div>
+            
 
-            </div>
-
-        </nav>
-        <!-- banner -->
-        <div>
-            <div class="text-center py-12 mt-7">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl text-center font-semibold mb-9">Freshness <span
-                        class="text-green-600">You
-                        Can</span><br>
-                    <span class="text-green-600">Count</span> On, Prices You’ll Love!
-                </h1>
-                <p class="text-md text-center my-6 sm:my-8 md:my-10">Shop your daily essentials at unbeatable prices.
-                    From fresh produce to
-                    pantry
-                    staples, we’ve got you
-                    covered every day!</p>
-            </div>
-            <div class=" flex justify-center items-center mb-12">
-                <img src="c2-assets/hero-vegetables.png" alt="">
-            </div>
+            
 
         </div>
+        
+         </nav>
+    
+    <!-- banner -->
+    <div>
+        <div class="text-center py-12 mt-7">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl text-center font-semibold mb-9">Freshness <span
+                    class="text-green-600">You
+                    Can</span><br>
+                <span class="text-green-600">Count</span> On, Prices You’ll Love!
+            </h1>
+            <p class="text-md text-center my-6 sm:my-8 md:my-10">Shop your daily essentials at unbeatable prices.
+                From fresh produce to
+                pantry
+                staples, we’ve got you
+                covered every day!</p>
+        </div>
+        <div class=" flex justify-center items-center mb-12">
+            <img src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+
+    </div>
     </header>
     <!-- main -->
     <main>
         <!-- services section -->
-        <section>
+        <section class="container my-14 max-w-[1320px] mx-auto">
             <h3 class="text-2xl font-semibold text-green-600 mt-6 sm:mt-8 mx-4 sm:mx-6 lg:mx-14 py-4">Services</h3>
 
             <!-- service card container -->
@@ -135,18 +138,19 @@
         </section>
 
         <!-- popular products section -->
-        <section class="bg-[#F9F6EF] py-8 my-10 mb-7">
-            <h3 class="text-2xl font-semibold text-green-600 mt-6 sm:mt-8 mx-4 sm:mx-6 lg:mx-14 py-4 mb-6">Popular
+        <section class="bg-[#F9F6EF] py-8 my-10 mb-7 ">
+            <h3 class="text-2xl font-semibold text-green-600 mt-6 sm:mt-8 mx-4 sm:mx-6 lg:mx-14 py-2 mb-3">Popular
                 Products</h3>
 
-            <div class=" container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+            <div class=" container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 my-14 max-w-[1320px]">
                 <!-- discount card -->
                 <div
                     class="bg-gradient-to-r from-green-500 to-green-200 text-white rounded-lg p-6 relative w-full sm:w-4/5 md:w-3/5 lg:w-[100%] h-100 mx-auto mb-14">
 
                     <div class="pt-5 sm:text-left">
                         <h3 class="text-3xl font-semibold mb-2 mt-4 sm:mt-2">30% off</h3>
-                        <p class="text-sm mb-5 text-gray-700 mt-6 sm:mt-2">Discover a world of treats, toys, and essentials
+                        <p class="text-sm mb-5 text-gray-700 mt-6 sm:mt-2">Discover a world of treats, toys, and
+                            essentials
                             handpicked for</p>
                         <button class="bg-white text-black mt-3 py-2 px-4 rounded hover:bg-orange-300">Buy
                             Now</button>
@@ -348,40 +352,70 @@
 
         </section>
 
-                  <!-- offers section -->
-                   <section class="my-14">
-                    <h3 class="text-2xl sm:font-bold font-semibold text-green-600 mt-6 sm:mt-8 mx-4 sm:mx-6 lg:mx-14 py-4">Arrival & Offers</h3>
-                         <!-- container -->
-                    <div class="container mx-auto flex flex-wrap justify-center p-4 gap-7">
-                         <div class="bg-green-900 flex rounded-xl p-6 sm:p-8">
-                         <div class="mt-12">
-                            <img src="c2-assets/dawat-logo.png" alt="">
-                            <button class= "bg-[#63B76D] text-green-100 mx-10 mt-5 mb-5 py-2 px-7 rounded-md hover:bg-green-700">Cook Exotic Dishes</button>
-                            <h3 class="text-2xl sm:text-2xl md:text-4xl text-white mx-10 mt-7">UP to <Span class="text-4xl text-white font-bold">20% OFF</Span></h3>
-        
-                         </div>
-                         <div class="mt-12">
-                            <img src="c2-assets/dawat-mock-up.png" alt="">
-                         </div>
+        <!-- offers section -->
+        <section class="container my-14 max-w-[1320px] mx-auto">
+            <h3 class="text-2xl sm:font-bold font-semibold text-green-600 py-4">
+                Arrival & Offers</h3>
+            <!-- container -->
+            <div class="flex flex-col lg:flex-row justify-between gap-7">
+                <div class="bg-green-900 flex rounded-xl p-6 sm:p-3">
+                    <div class="mt-12">
+                        <img src="c2-assets/dawat-logo.png" alt="">
+                        <button
+                            class="bg-[#63B76D] text-green-100 mx-10 mt-5 mb-5 py-2 px-7 rounded-md hover:bg-green-700">Cook
+                            Exotic Dishes</button>
+                        <h3 class="text-2xl sm:text-xl md:text-4xl text-white mx-10 mt-7">UP to <Span
+                                class="text-4xl text-white font-bold">20% OFF</Span></h3>
 
                     </div>
-             <!-- 2 -->
-                    <div class="bg-[#102861] flex rounded-xl p-4 sm:p-6">
-                        <div class="mt-12">
-                           <img class="mx-7" src="c2-assets/india-gate-logo.png" alt="">
-                           <button class= "bg-[#2A4D97] text-green-100 mx-10 mt-5 mb-5 py-2 px-7 rounded-md hover:bg-green-700">World’s No.1 Rice</button>
-                           <h3 class="text-2xl sm:text-3xl md:text-4xl text-white mx-10 mt-7">UP to <Span class="text-4xl text-white font-bold">40% OFF</Span></h3>
-                           
-                        </div>
-                        <div class="mt-12">
-                           <img class=" bottom-0 mr-3" src="c2-assets/india-gate-mock-up.png" alt="">
-                        </div>
-                        
-                   </div>
+                    <div class="mt-12">
+                        <img src="c2-assets/dawat-mock-up.png" alt="">
                     </div>
-                   </section>
+
+                </div>
+                <!-- 2 -->
+                <div class="bg-[#102861] flex rounded-xl p-4 sm:p-6">
+                    <div class="mt-12">
+                        <img class="mx-7" src="c2-assets/india-gate-logo.png" alt="">
+                        <button
+                            class="bg-[#2A4D97] text-green-100 mx-10 mt-5 mb-5 py-2 px-7 rounded-md hover:bg-green-700">World’s
+                            No.1 Rice</button>
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl text-white mx-10 mt-7">UP to <Span
+                                class="text-4xl text-white font-bold">40% OFF</Span></h3>
+
+                    </div>
+                    <div class="mt-12">
+                        <img class=" bottom-0 mr-3" src="c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- middle section -->
+
+        <section class="container my-14 max-w-[1320px] mx-auto">
+            <div class="bg-[#F9F6EF] gap-3 md:gap-8">
+                <div class="mt-12 container mx-auto flex flex-wrap justify-center gap-x-10 p-4 px-4 gap-3 sm:gap-4 md:gap-8">
+                   
+                    <div>
+                        <img class="size-max my-6" src="c2-assets/vegetable-busket.png" alt="" class="w-32 h-32">
+                    </div>
+                    <div class="mt-14">
+                        <h2 class="text-3xl font-bold text-gray-800 text-center mt-8">Get Grocery News!</h2>
+                        <p class="text-gray-600 text-center my-4">Exclusive training tips, tricks, product deals, and
+                            more.</p>
+
+                        <input type="email" placeholder="Enter email..."
+                            class="w-full py-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button
+                            class="w-[30%] mx-auto flex justify-center md:justify-start mt-4 bg-green-500 text-white p-2 rounded-lg hover:bg-green-600 transition">Subscribe</button>
+
+                    </div>
+                </div>
 
 
+        </section>
 
 
 
